@@ -4,17 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cascata, especificidade e combinadores</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div>
-        <h1>cascata, especificidade e combinadores</h1>
+        <h1 id="Título">cascata, especificidade e combinadores</h1>
         <h2>Sobre a cascata:</h2>
         <p>A regra da cascata no CSS consiste que, tudo o que for escrito no código vai ser lido de cima para baixo, logo,com duas (ou mais) propriedades, a última é a que vai prevalecer.</p>
         <h2>Sobre especificidade:</h2>
-        <p>Especificidade é o quão especifico ou qual a quantidade de pontos que cada seletor tem, ou seja, quando o seletor é mais específico, ele tem "mais força" do que o seletor menos menos específico.</p>
-        <h2>Tags de especificidade</h2>
-        <p>Existe dois tipos de tag de específicidade </p>
+        <p>Especificidade é o quão especifico ou qual a quantidade de pontos que cada seletor tem, ou seja, quando o seletor é mais especifico, ele tem "mais força" do que o seletor menos menos específico.</p>
+        <h2>Tags de especificidade e suas diferenças</h2>
+        <p>A tag class tem 10 pontos de especificidade, logo sendo menos especifico que o id que tem 100 pontos, porém é preferível que seja utilizado o class, ja que pode utilizar a mesma classe em vários h1 e o id sendo necessario a numeração de cada titulo.</p>
+        <h2>Sobre a combinação de setores:</h2>
+        <p>Quando é colocado um setor junto com outro, veja alguns exemplos:</p>
+        <ul>
+            <li> .primeira h1 = é uma combinação em que se aplica a todos h1 que estão dentro da div "primeira";</li>
+            <li> .primeira > h1 = é utilizado para mexer somente no h1 "filho" da classe: "primeira";</li>
+            <li> .primeira h1 + h1 = é a estilização de um h1 que tenha um h1 antes dele;</li>
+        </ul>
+        <h2>O funcionamento das pseudo-classes:</h2>
+        <p>Se chama assim porquê é uma classe que não foi criada no html mas foi usada no CSS.</p>
+        <ul>
+            <li>first-child = primeiro h1;</li>
+            <li>last-child = é o útimo h1;</li>
+            <li>nth-child() ou nth-of-type() = é o número do "filho" que vai ser estilizado;</li>
+        </ul>
+
+        <a href="pagina2.html">Conhecer sobre o Display e o Box Model</a>
     </div>
-    
-</body>
 </html>
