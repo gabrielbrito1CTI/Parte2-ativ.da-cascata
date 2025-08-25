@@ -1,35 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cascata, especificidade e combinadores</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div>
-        <h1 id="Título">cascata, especificidade e combinadores</h1>
-        <h2>Sobre a cascata:</h2>
-        <p>A regra da cascata no CSS consiste que, tudo o que for escrito no código vai ser lido de cima para baixo, logo,com duas (ou mais) propriedades, a última é a que vai prevalecer.</p>
-        <h2>Sobre especificidade:</h2>
-        <p>Especificidade é o quão especifico ou qual a quantidade de pontos que cada seletor tem, ou seja, quando o seletor é mais especifico, ele tem "mais força" do que o seletor menos menos específico.</p>
-        <h2>Tags de especificidade e suas diferenças</h2>
-        <p>A tag class tem 10 pontos de especificidade, logo sendo menos especifico que o id que tem 100 pontos, porém é preferível que seja utilizado o class, ja que pode utilizar a mesma classe em vários h1 e o id sendo necessario a numeração de cada titulo.</p>
-        <h2>Sobre a combinação de setores:</h2>
-        <p>Quando é colocado um setor junto com outro, veja alguns exemplos:</p>
-        <ul>
-            <li> .primeira h1 = é uma combinação em que se aplica a todos h1 que estão dentro da div "primeira";</li>
-            <li> .primeira > h1 = é utilizado para mexer somente no h1 "filho" da classe: "primeira";</li>
-            <li> .primeira h1 + h1 = é a estilização de um h1 que tenha um h1 antes dele;</li>
-        </ul>
-        <h2>O funcionamento das pseudo-classes:</h2>
-        <p>Se chama assim porquê é uma classe que não foi criada no html mas foi usada no CSS.</p>
-        <ul>
-            <li>first-child = primeiro h1;</li>
-            <li>last-child = é o útimo h1;</li>
-            <li>nth-child() ou nth-of-type() = é o número do "filho" que vai ser estilizado;</li>
-        </ul>
 
-        <a href="pagina2.html">Conhecer sobre o Display e o Box Model</a>
+<body>
+    <header id="Cascata, especificidade e combinadores">
+        <div class="Primeira">
+            <h1>Cascata, especificidade e combinadores</h1>
+        </div>
+    </header>
+
+    <div class="Segunda">
+        <main>
+            <section class="O que são e como funcionam.1">
+                <h2>Sobre a cascata:</h2>
+                <p>A regra da cascata no CSS consiste que, tudo o que for escrito no código vai ser lido de cima para
+                    baixo, logo,com duas (ou mais) propriedades, a última é a que vai prevalecer.</p>
+            </section>
     </div>
+
+    <div class="Terceira">
+        <section class="O que são e como funcionam.2">
+            <h2>Sobre especificidade:</h2>
+            <p>Especificidade é o quão especifico ou qual a quantidade de pontos que cada seletor tem, ou seja,
+                quando o seletor é mais especifico, ele tem "mais força" do que o seletor menos menos específico.
+            </p>
+        </section>
+    </div>
+
+    <div class="Quarta">
+        <section class="O que são e como funcionam.3">
+            <h2>Tags de especificidade e suas diferenças</h2>
+            <p>A tag class tem 10 pontos de especificidade, logo sendo menos especifico que o id que tem 100 pontos,
+                porém é preferível que seja utilizado o class, ja que pode utilizar a mesma classe em vários h1 e o
+                id sendo necessario a numeração de cada titulo.</p>
+        </section>
+    </div>
+
+    <div class="Quinta">
+        <section class="O que são e como funcionam.4">
+            <h2>Sobre a combinação de setores:</h2>
+            <p>Quando é colocado um setor junto com outro, veja alguns exemplos:</p>
+
+            <ul>
+                <li> .primeira h1 = é uma combinação em que se aplica a todos h1 que estão dentro da div "primeira";
+                </li>
+                <li> .primeira > h1 = é utilizado para mexer somente no h1 "filho" da classe: "primeira";</li>
+                <li> .primeira h1 + h1 = é a estilização de um h1 que tenha um h1 antes dele;</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="Sexta">
+        <section class="filhos">
+            <h2>O funcionamento das pseudo-classes:</h2>
+            <p>Se chama assim porquê é uma classe que não foi criada no html mas foi usada no CSS.</p>
+            <ul>
+                <li>first-child = primeiro h1;</li>
+                <li>last-child = é o útimo h1;</li>
+                <li>nth-child() ou nth-of-type() = é o número do "filho" que vai ser estilizado;</li>
+            </ul>
+        </section>
+    </div>
+
+    <header id="Display, propriedades, elementos, shorthand, sufixos e Box-sizing">
+        <div class="Setima">
+            <h1>Display e Box Model</h1>
+        </div>
+    </header>
+
+    <div class="Oitava">
+        <section class="Display inline/block">
+            <h2>As diferenças entre display inline e diplay block:</h2>
+            <p>Display block ocupa sempre a tela inteira, já o display inline ocupa apenas o espaço para ele existir,
+                logo,
+                todo elemento que tem display inline por padrão, se agrupam um ao lado do outro.</p>
+        </section>
+    </div>
+
+    <div class="Nona">
+        <section class="propriedades que se aplicam em um que não se aplicam no outro">
+            <h2>Propriedades que podem ser aplicadas a um que não se aplicam no outro:</h2>
+            <p>As propriedades -width e -height do display block nao se aplicam ao display inline.</p>
+        </section>
+    </div>
+
+    <div class="Decima">
+        <section class="elementos">
+            <h2>Elementos que são por padrão do display inline e do display block:</h2>
+            <ul>
+                <li>Elementos do display inline = a, strong, span, img;</li>
+                <li>Elementos do display block = h1, p, div, section, main, header, nav;</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="Decima-primeira">
+        <section class="Serventia das propriedades">
+            <h2>Serventia das propriedades margin, padding e border:</h2>
+            <ul>
+                <li>Margin = é o espaço externo do elemento;</li>
+                <li>Padding = é o espaço interno, entre o conteúdo e a borda;</li>
+                <li>Border = é a borda ao redor;</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="Decima-segunda">
+        <section class="Todas as opções possíveis de shorthand">
+            <h2>Todas as opções possíveis de shorthand:</h2>
+            <ol>
+                <li>margin: 10px = é aplicado em todos os lados;</li>
+                <li>margin: 10px X 20px = é aplicado em cima/baixo = 10px e os lados = 20px;</li>
+                <li>margin: 10px X 20px X 30px= é aplicado em cima = 10px, nos lados = 20px, para baixo = 30px;</li>
+                <li>margin: 10px X 20px X 30px X 40px = é aplicado em cima = 10px, para a direita = 20px, para baixo =
+                    30px,
+                    para a esquerda = 40px;</li>
+            </ol>
+        </section>
+    </div>
+
+    <div class="Decima-terceira">
+        <section class="Os sufixos">
+            <h2>Os sufixos:</h2>
+            <ol>
+                <li>Top = aumenta/diminui o superior;</li>
+                <li>Bottom = aumenta/diminui o inferior;</li>
+                <li>Left = aumenta/diminui a esquerda;</li>
+                <li>Right = aumenta/diminui a direita;</li>
+            </ol>
+            <ul>
+                <li>Display block = ocupa sempre a tela inteira, logo, a cada novo elemento, vai sendo colocado um em
+                    baixo
+                    do outro;</li>
+                <li>Display inline = ocupa apenas o espaço para ele existir, logo, se agrupam um ao lado do outro;</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="Decima-quarta">
+        <section class="Box-sizing: border-box">
+            <h2>A utilização da propriedade = Box-sizing: border-box:</h2>
+            <ul>
+                <li>Box-sizing-content-box (padrão): largura e altura não incluem padding/border;</li>
+                <li>Border-box: largura e altura incluem padding/border;</li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="Decima-quinta">
+        <nav>
+            <a href="#Cascata, especificidade e combinadores">Voltar para a primeira parte</a>
+            <a href="#Display, propriedades, elementos, shorthand, sufixos e Box-sizing">voltar para o começo da segunda
+                parte</a>
+        </nav>
+    </div>
+
+</body>
+
 </html>
